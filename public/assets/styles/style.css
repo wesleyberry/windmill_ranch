@@ -30,23 +30,36 @@ a {
     .outer-large-nav {
         display: none;
     }
-    .cfl-lodging {
+    #titles-container-landing {
+        height: 100%;
         position: absolute;
-        top: 85%;
-        left: 18%;
+    }
+    .cfl-lodging {
+        width: 100%;
         color: rgb(199, 184, 199);
         font-weight: 800;
         letter-spacing: 12px;
         font-size: 28px;
+        text-align: center;
+    }
+    .cfl-container {
+        position: absolute;
+        bottom: 50px;
+    }
+    .title-container-landing {
+        margin-top: 150px;
     }
     .title-landing {
-        position: absolute;
-        top: 17%;
-        left: 15%;
         color: rgb(240, 240, 240);
         font-weight: 900;
         letter-spacing: 15px;
         font-size: 44px;
+        text-align: center;
+        top: 100px;
+    }
+    #titles-container-landing {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -99,6 +112,9 @@ a {
     .nav-link:hover {
         color: rgb(150, 0, 150);
         transition: 0.4s
+    }
+    #titles-container-landing {
+        width: 75%;
     }
 }
 
