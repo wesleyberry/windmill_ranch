@@ -1,3 +1,108 @@
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none !important;
+}
+/* Extra Small Devices 300px */
+@media (min-width: 300px) {
+    /* -------------Landing Page----------- */
+    #landing-page {
+        height: 100vh;
+        width: 100vw;
+    }
+    .back-drop {
+        background-image: url('../images/dining_dark_edit_1.jpg');
+        overflow: hidden;
+        background-position: center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+    .outer-large-nav {
+        display: none;
+    }
+    .cfl-lodging {
+        position: absolute;
+        top: 85%;
+        left: 18%;
+        color: rgb(199, 184, 199);
+        font-weight: 800;
+        letter-spacing: 12px;
+        font-size: 28px;
+    }
+    .title-landing {
+        position: absolute;
+        top: 17%;
+        left: 15%;
+        color: rgb(240, 240, 240);
+        font-weight: 900;
+        letter-spacing: 15px;
+        font-size: 44px;
+    }
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .back-drop {
+        width: 75%;
+        float: left;
+    }
+    .outer-large-nav {
+        display: block;
+        width: 25%;
+        height: 100vh;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(247, 247, 247);
+    }
+    .large-nav {
+        height: 90%;
+        background-color: rgb(247, 247, 247);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;
+    }
+    .navs-titles {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 800;
+        letter-spacing: 3px;
+    }
+    .nav-link {
+        color: rgb(77, 0, 77);
+        transition: 0.4s;
+    }
+    .nav-link:hover {
+        color: rgb(150, 0, 150);
+        transition: 0.4s
+    }
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
