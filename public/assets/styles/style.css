@@ -1,6 +1,12 @@
+html {
+    width: 100vw;
+    height: 100%;
+}
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    width: 100%;
+    height: 100%;
 }
 h1 {
     font-family: 'Montserrat', sans-serif;
@@ -39,33 +45,54 @@ a {
         color: rgb(199, 184, 199);
         font-weight: 800;
         letter-spacing: 12px;
-        font-size: 28px;
+        font-size: 20px;
         text-align: center;
     }
     .cfl-container {
         position: absolute;
         bottom: 50px;
+        width: 100%;
     }
     .title-container-landing {
-        margin-top: 150px;
+        margin-top: 100px;
+        width: 100%;
+        height: 40%;
     }
     .title-landing {
         color: rgb(240, 240, 240);
         font-weight: 900;
         letter-spacing: 15px;
-        font-size: 44px;
+        font-size: 28px;
         text-align: center;
         top: 100px;
+    }
+    .title-subheading,
+    .title-heading {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: hsl(0, 0%, 0%, 0.25);
     }
     #titles-container-landing {
         display: flex;
         justify-content: center;
+        width: 100%;
     }
 }
 
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
+    .cfl-lodging {
+        font-size: 28px;
+    }
+    .title-landing {
+        font-size: 44px;
+    }
+    .title-container-landing {
+        margin-top: 150px;
+    }
+    .cfl-container {
+        bottom: 180px;
+    }
 }
 
  /* Medium devices (tablets, 768px and up) */
@@ -108,6 +135,8 @@ a {
     .nav-link {
         color: rgb(77, 0, 77);
         transition: 0.4s;
+        height: 100%;
+        width: 100%;
     }
     .nav-link:hover {
         color: rgb(150, 0, 150);
