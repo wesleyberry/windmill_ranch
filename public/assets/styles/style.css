@@ -14,6 +14,9 @@ h1 {
 a {
     text-decoration: none !important;
 }
+.container {
+    padding: 0;
+}
 /* Extra Small Devices 300px */
 @media (min-width: 300px) {
     /* -------------Landing Page----------- */
