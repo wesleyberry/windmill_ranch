@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html {
     width: 100vw;
     height: 100%;
@@ -16,6 +21,67 @@ a {
 }
 .container {
     padding: 0;
+}
+/* -------------pre-loader------------ */
+.preload {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(17, 4, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    transition: opacity 0.5s ease;
+}
+.cloud1,
+.cloud2,
+.cloud3 {
+    height: 80px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+.cloud1 {
+    top: 10%;
+    transform: translate(100%, -25%);
+    animation: clouds linear 8s infinite;
+}
+.cloud2 {
+    top: 22%;
+    transform: translate(100%, -50%);
+    animation: clouds linear 6s infinite 2s;
+}
+.cloud3 {
+    top: 34%;
+    transform: translate(100%, -75%);
+    animation: clouds linear 4s infinite 1.5s;
+}
+.windmill {
+    height: 400px;
+    position: absolute;
+    bottom: 0%;
+}
+.preload h3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-75%);
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.preload-finish {
+    opacity: 0;
+    pointer-events: none;
+}
+@keyframes clouds {
+    from {
+        right: 0%;
+    }
+    to {
+        right: 130%;
+    }
 }
 /* Extra Small Devices 300px */
 @media (min-width: 300px) {
@@ -154,4 +220,3 @@ a {
 @media (min-width: 1200px) {
 
 }
-/* ------------Color Page--------------- */
