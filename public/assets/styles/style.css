@@ -19,9 +19,6 @@ h1 {
 a {
     text-decoration: none !important;
 }
-.container {
-    padding: 0;
-}
 /* -------------pre-loader------------ */
 .preload {
     position: fixed;
@@ -75,6 +72,65 @@ a {
     opacity: 0;
     pointer-events: none;
 }
+/* ---------Navbar---------- */
+.navbar {
+    padding: 0 1rem;
+}
+.fixed-top {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+}
+.bg-light {
+    background-color: rgba(231, 231, 231, 0.7) !important;
+}
+.navbar-brand {
+    padding: 0;
+}
+.nav-link {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(17, 17, 17) !important;
+    transition: 0.4s;
+    margin-right: 30px;
+}
+.nav-link:hover {
+    color: #960096 !important;
+    transition: 0.4s;
+}
+.nav-link.active {
+    color: #4d004d !important;
+}
+/* --------Landing Page-------- */
+.backDrop {
+    padding: 0 !important;
+}
+.carousel-item {
+    margin: 0 !important;
+}
+.d-block {
+    height: auto;
+    background-position: center;
+}
+.carouselImages {
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#image_1 {
+    background-image: url('../images/WMRCASFRNT.jpg');
+}
+#image_2 {
+    background-image: url('../images/WMRSILO2.jpg');
+}
+#image_3 {
+    background-image: url('../images/WMRLRFULLVIEW.jpg');
+}
+#image_4 {
+    background-image: url('../images/WMRENTRYSIGNLG.jpg');
+}
 @keyframes clouds {
     from {
         right: 0%;
@@ -85,83 +141,18 @@ a {
 }
 /* Extra Small Devices 300px */
 @media (min-width: 300px) {
-    /* -------------Landing Page----------- */
-    #landing-page {
-        height: 100vh;
-        width: 100vw;
+    #logo {
+        height: 100px;
+        width: auto;
     }
-    .back-drop {
-        background-image: url('../images/dining_dark_edit_1.jpg');
-        overflow: hidden;
-        background-position: center;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        height: 100%;
-        width: 100%;
-    }
-    .outer-large-nav {
-        display: none;
-    }
-    #titles-container-landing {
-        height: 100%;
-        position: absolute;
-    }
-    .cfl-lodging {
-        width: 100%;
-        color: rgb(199, 184, 199);
-        font-weight: 800;
-        letter-spacing: 12px;
-        font-size: 20px;
-        text-align: center;
-    }
-    .cfl-container {
-        position: absolute;
-        bottom: 50px;
-        width: 100%;
-    }
-    .title-container-landing {
+    .carousel {
         margin-top: 100px;
-        width: 100%;
-        height: 40%;
-    }
-    .title-landing {
-        color: rgb(240, 240, 240);
-        font-weight: 900;
-        letter-spacing: 15px;
-        font-size: 28px;
-        text-align: center;
-        top: 100px;
-    }
-    .title-subheading,
-    .title-heading {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        background-color: hsl(0, 0%, 0%, 0.25);
-    }
-    #titles-container-landing {
-        display: flex;
-        justify-content: center;
-        width: 100%;
     }
 }
 
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .cfl-lodging {
-        font-size: 28px;
-    }
-    .title-landing {
-        font-size: 44px;
-    }
-    .title-container-landing {
-        margin-top: 150px;
-    }
-    .cfl-container {
-        bottom: 180px;
-    }
+
 }
 
  /* Medium devices (tablets, 768px and up) */
@@ -171,48 +162,12 @@ a {
 
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .back-drop {
-        width: 75%;
-        float: left;
+    #logo {
+        height: 140px;
+        width: auto;
     }
-    .outer-large-nav {
-        display: block;
-        width: 25%;
-        height: 100vh;
-        float: right;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: rgb(247, 247, 247);
-    }
-    .large-nav {
-        height: 90%;
-        background-color: rgb(247, 247, 247);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: stretch;
-        align-content: stretch;
-    }
-    .navs-titles {
-        text-align: center;
-        font-size: 40px;
-        font-weight: 800;
-        letter-spacing: 3px;
-    }
-    .nav-link {
-        color: rgb(77, 0, 77);
-        transition: 0.4s;
-        height: 100%;
-        width: 100%;
-    }
-    .nav-link:hover {
-        color: rgb(150, 0, 150);
-        transition: 0.4s
-    }
-    #titles-container-landing {
-        width: 75%;
+    .carousel {
+        margin-top: 0px;
     }
 }
 
