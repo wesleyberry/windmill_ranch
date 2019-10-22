@@ -106,15 +106,21 @@ a {
 .backDrop {
     padding: 0 !important;
 }
-.carousel-item {
-    margin: 0 !important;
+.carousel-inner {
+    overflow: visible;
+}
+.carousel-inner>.carousel-item {
+    -webkit-transition: 2s !important;
+    -o-transition: 2s !important;
+    transition: 2s !important;
 }
 .d-block {
     height: auto;
     background-position: center;
 }
 .carouselImages {
-    height: 100vh;
+    margin-top: 140px;
+    height: 80vh;
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -130,6 +136,16 @@ a {
 }
 #image_4 {
     background-image: url('../images/WMRENTRYSIGNLG.jpg');
+}
+#headingContainer {
+    width: 90vw;
+    height: 100vh;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+}
+#heading {
+
 }
 @keyframes clouds {
     from {
