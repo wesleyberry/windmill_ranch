@@ -20,6 +20,9 @@ h1 {
 a {
     text-decoration: none !important;
 }
+a:focus {
+    outline: none !important;
+}
 /* -------------pre-loader------------ */
 .preload {
     position: fixed;
@@ -142,7 +145,7 @@ a {
 }
 /* -----Meet tom----- */
 #landing_container_1 {
-    background-color: #11041d;
+    background-color: rgb(15, 3, 26);
     padding: 150px 0 150px 0;
 }
 #meetTom {
@@ -159,6 +162,15 @@ a {
     letter-spacing: 1px;
     line-height: 1.6;
 }
+#landing_container_1 > div > div > div.col-sm-12.col-md-4.col-lg-3 > img {
+    height: 300px; 
+    width: auto; 
+    border-style: solid; 
+    border-width: 5px; 
+    border-radius: 4px; 
+    border-color: black;
+}
+/* ----Neighborhood----- */
 @keyframes clouds {
     from {
         right: 0%;
@@ -199,6 +211,76 @@ a {
         text-shadow: 3px 3px 2px rgb(0, 0, 0);
         margin-top: 250px;
     }
+    #meetTomPara {
+        padding-top: 50px;
+    }
+    #landing_container_2 {
+        background-image: url('../images/WMRCASSIDEVW4.jpg');
+        width: 100%;
+        height: auto;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow-y: hidden;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .landingPrivacy {
+        color: #A9B300;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        padding-top: 50px;
+    }
+    .landingPrivacyPara {
+        color: rgb(236, 236, 236);
+        font-size: 24px;
+        text-align: center;
+    }
+    .featuresButton {
+        font-size: 24px;
+        background-color: rgb(200, 211, 0);
+        color: rgb(17, 17, 17);
+        transition: 0.4s;
+        margin: 30px 0 50px 0;
+        border-color: #c8d300;
+        text-decoration: none !important;
+        outline: 0 !important;
+    }
+    .featuresButton:hover {
+        transition: 0.4s;
+        color: white;
+        background-color: rgb(86, 90, 0);
+        margin-bottom: 50px;
+        border-color: rgb(86, 90, 0);
+        text-decoration: none !important;
+        outline: 0 !important;
+    }
+    .featuresButton:active,
+    .featuresButton:visited,
+    .featuresButton:focus {
+        background-color:rgb(86, 90, 0) !important;
+        border-color: rgb(86, 90, 0) !important;
+        text-decoration: none !important;
+        outline: 0 !important;
+    }
+    .featuresButton:focus * {
+        outline: 0 !important;
+    }
+    #landing_container_2 > div > a > button:focus {
+        outline: 0 !important;
+    }
+    .testimonials {
+        margin-top: 50px;
+    }
+    .testimonialContainer {
+        background-color: rgb(15, 3, 26);
+    }
+    .testText {
+        color: rgb(236, 236, 236);
+        font-size: 24px;
+    }
 }
 
  /* Small devices (landscape phones, 576px and up) */
@@ -220,6 +302,13 @@ a {
     #landing_container_1 > div > div > div.col-sm-12.col-md-8.col-lg-9 {
         margin: 0;
     }
+    #meetTomPara {
+        padding-top: 0;
+        padding-left: 30px;
+    }
+    #landing_container_1 > div > div > div.col-sm-12.col-md-4.col-lg-3 > img {
+        height: 350px;
+    }
 }
 
  /* Large devices (desktops, 992px and up) */
@@ -237,11 +326,17 @@ a {
     #subHeading {
         margin-top: 280px;
     }
+    #meetTomPara {
+        padding-left: 70px;
+    }
 }
 
  /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     #heading {
         font-size: 110px;
+    }
+    #landing_container_1 > div > div > div.col-sm-12.col-md-4.col-lg-3 > img {
+        height: 400px;
     }
 }
