@@ -281,11 +281,66 @@ a:focus {
         color: rgb(236, 236, 236);
         font-size: 24px;
     }
+    #footer {
+        background-color: #999999;
+    }
+    #footerLogo {
+        height: 150px;
+        width: auto;
+    }
+    .footerHeaders {
+        color: #4d004d;
+        font-size: 34px;
+    }
+    .footerText {
+        color: rgb(15, 3, 26);
+        font-size: 20px;
+    }
+    #footer > div > div > div:nth-child(2) > p:nth-child(2) > a:active,
+    #footer > div > div > div:nth-child(2) > p:nth-child(3) > a:active,
+    #footer > div > div > div:nth-child(2) > p:nth-child(4) > a:active,
+    #footer > div > div > div:nth-child(2) > p:nth-child(5) > a:active,
+    #footer > div > div > div:nth-child(2) > p:nth-child(6) > a:active,
+    #footer > div > div > div:nth-child(2) > p:nth-child(2) > a:hover,
+    #footer > div > div > div:nth-child(2) > p:nth-child(3) > a:hover,
+    #footer > div > div > div:nth-child(2) > p:nth-child(4) > a:hover,
+    #footer > div > div > div:nth-child(2) > p:nth-child(5) > a:hover,
+    #footer > div > div > div:nth-child(2) > p:nth-child(6) > a:hover {
+        color: #960096 !important;
+        transition: 0.4s;
+    }
+    #footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-top: solid #c8d300 3px;
+    }
+    #footer > div > div:nth-child(1) {
+        margin-bottom: 30px;
+    }
+    .socialIcons {
+        margin: 0 50px 0 50px;
+    }
+    .icons {
+        font-size: 50px;
+        color: #4d004d;
+        transition: 0.4s;
+    }
+    .icons:hover {
+        color: #960096 !important;
+        transition: 0.4s;
+    }
+    #footer > div > div:nth-child(1) > div:nth-child(3) > p > a:hover,
+    #footer > div > div:nth-child(1) > div:nth-child(3) > p > a:active {
+        color: #960096 !important;
+    }
 }
 
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
+    #footerLogo {
+        height: 170px;
+        width: auto;
+    }
 }
 
  /* Medium devices (tablets, 768px and up) */
@@ -309,6 +364,12 @@ a:focus {
     #landing_container_1 > div > div > div.col-sm-12.col-md-4.col-lg-3 > img {
         height: 350px;
     }
+    #footer > div > div > div.col-xs-12.col-md-6 {
+        border-right: solid rgb(43, 42, 42) 1px;
+    }
+    #footer > div > div > div:nth-child(2) {
+        border-right: solid rgb(43, 42, 42) 1px;
+    }
 }
 
  /* Large devices (desktops, 992px and up) */
@@ -329,6 +390,10 @@ a:focus {
     #meetTomPara {
         padding-left: 70px;
     }
+    #footerLogo {
+        height: 200px;
+        width: auto;
+    }
 }
 
  /* Extra large devices (large desktops, 1200px and up) */
@@ -338,5 +403,12 @@ a:focus {
     }
     #landing_container_1 > div > div > div.col-sm-12.col-md-4.col-lg-3 > img {
         height: 400px;
+    }
+    #footerLogo {
+        height: 240px;
+        width: auto;
+    }
+    .socialIcons {
+        margin: 0 65px 0 65px;
     }
 }
