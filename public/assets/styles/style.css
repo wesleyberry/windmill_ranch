@@ -288,7 +288,7 @@ a:focus {
         font-size: 24px;
     }
     #footer {
-        background-color: #b8b8b8;;
+        background-color: #b8b8b8;
     }
     #footerLogo {
         height: 150px;
@@ -450,7 +450,20 @@ a:focus {
         left: 0;
         top: 0;
         border-top: solid #c8d300 3px;
-    }    
+    }   
+    #casitas_container_6 {
+        padding: 75px 0 75px 0;
+        background-color: rgb(15, 3, 26);
+    } 
+    #casitas_container_6 > div > div {
+        padding: 50px 0 50px 0;
+    }
+    .amenitiesHeaders {
+        color: rgb(236, 236, 236);
+    }
+    .lists {
+        color: rgb(184, 184, 184);
+    }
     #casitas_container_7 {
         padding: 0;
         background-color: rgb(15, 3, 26);
@@ -458,6 +471,8 @@ a:focus {
     .contain {
         overflow: hidden;
         padding: 15px;
+        height: 300px;
+        width: 100%;
     }
     .casitasImages {
         width: 100%;        
@@ -466,16 +481,10 @@ a:focus {
         height: 300px;
         transition: 0.4s;
         overflow: hidden;
-        -webkit-transform: scale(0.4s); 
-        -moz-transform: scale(0.4s);
-        -o-transform: scale(0.4s);
     }
     .casitasImages:hover {
-        transform: scale(1.1);
+        height: 400px;
         transition: 0.4s;
-        -webkit-transform: scale(0.4s); 
-        -moz-transform: scale(0.4s);
-        -o-transform: scale(0.4s);
     }
     #casitaImage_1 {
         background-image: url('../images/WMRDININGKIT.jpg');
@@ -613,7 +622,13 @@ a:focus {
     .bookButton {
         font-size: 24px;
     }
+    .contain {
+        height: 400px;
+    }
     .casitasImages {
-        height: 350px;
+        height: 400px;
+    }
+    .casitasImages:hover {
+        height: 450px;
     }
 }
