@@ -238,15 +238,17 @@ a:focus {
         font-size: 24px;
         text-align: center;
     }
-    .featuresButton {
+    .btn {
         font-size: 24px;
-        background-color: rgb(200, 211, 0);
-        color: rgb(17, 17, 17);
         transition: 0.4s;
-        margin: 30px 0 50px 0;
-        border-color: #c8d300;
         text-decoration: none !important;
         outline: 0 !important;
+    }
+    .featuresButton {
+        background-color: rgb(200, 211, 0);
+        color: rgb(17, 17, 17);
+        margin: 30px 0 50px 0;
+        border-color: #c8d300;
     }
     .featuresButton:hover {
         transition: 0.4s;
@@ -333,6 +335,23 @@ a:focus {
     #footer > div > div:nth-child(1) > div:nth-child(3) > p > a:active {
         color: #960096 !important;
     }
+    .bookButton {
+        background-color: #960096 !important;
+        color: rgb(231, 231, 231);
+        margin: 30px 0 30px 0;
+        border-color: #960096 !important;
+    }
+    .bookButton:hover {
+        transition: 0.4s;
+        color: white;
+        background-color: #4d004d !important;
+        border-color: #4d004d !important;
+        text-decoration: none !important;
+        outline: 0 !important;
+    }
+    #navbarNav > ul > li:nth-child(5) {
+        border-bottom: solid black 1px;
+    }
 }
 
  /* Small devices (landscape phones, 576px and up) */
@@ -394,6 +413,14 @@ a:focus {
         height: 200px;
         width: auto;
     }
+    #navbarNav > ul > li:nth-child(5) {
+        border-right: solid black 1px;
+        border-bottom: none;
+    }
+    .bookButton {
+        font-size: 20px;
+        margin: 0 0 0 30px;
+    }
 }
 
  /* Extra large devices (large desktops, 1200px and up) */
@@ -410,5 +437,8 @@ a:focus {
     }
     .socialIcons {
         margin: 0 65px 0 65px;
+    }
+    .bookButton {
+        font-size: 24px;
     }
 }
