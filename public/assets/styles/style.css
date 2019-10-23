@@ -106,6 +106,9 @@ a:focus {
 .nav-link.active {
     color: #4d004d !important;
 }
+.show {
+    background-color: rgba(231, 231, 231, 0.15) !important;
+}
 /* --------Landing Page-------- */
 .backDrop {
     padding: 0 !important;
@@ -148,7 +151,7 @@ a:focus {
     background-color: rgb(15, 3, 26);
     padding: 150px 0 150px 0;
 }
-#meetTom {
+.normalHeaders {
     color: #A9B300;
     text-align: center;
     font-size: 50px;
@@ -156,7 +159,7 @@ a:focus {
     letter-spacing: 3px;
 }
 #meetTomPara {
-    color: #999999;
+    color: #b8b8b8;;
     font-size: 20px;
     margin-top: auto;
     letter-spacing: 1px;
@@ -224,6 +227,8 @@ a:focus {
         overflow-y: hidden;
         padding-top: 100px;
         padding-bottom: 100px;
+        left: 0;
+        top: 0;
     }
     .landingPrivacy {
         color: #A9B300;
@@ -234,7 +239,7 @@ a:focus {
         padding-top: 50px;
     }
     .landingPrivacyPara {
-        color: rgb(236, 236, 236);
+        color: #b8b8b8;
         font-size: 24px;
         text-align: center;
     }
@@ -280,11 +285,11 @@ a:focus {
         background-color: rgb(15, 3, 26);
     }
     .testText {
-        color: rgb(236, 236, 236);
+        color: #b8b8b8;
         font-size: 24px;
     }
     #footer {
-        background-color: #999999;
+        background-color: #b8b8b8;;
     }
     #footerLogo {
         height: 150px;
@@ -352,6 +357,84 @@ a:focus {
     #navbarNav > ul > li:nth-child(5) {
         border-bottom: solid black 1px;
     }
+    #casitas_container_1 {
+        margin-top: 140px;
+    }
+    .casitas_header_1 {
+        text-align: center;
+        font-size: 60px;
+        padding-top: 50px;
+        padding-bottom: 25px;
+        color: rgb(231, 231, 231);
+    }
+    #casitas_container_1 {
+        background-image: url('../images/WMRCASSIDEVW4.jpg');
+        width: 100%;
+        min-height: 66vh;
+        background-position: center;
+        background-size: cover;
+        background-attachment: scroll;
+        overflow-y: hidden;
+        left: 0;
+        top: 0;
+    }
+    #casitas_container_2 > div > p {
+        margin-bottom: 0;
+    }
+    #casitas_container_2 {
+        background: rgb(46,0,46);
+        background: radial-gradient(circle, rgba(46,0,46,1) 60%, rgba(77,0,77,1) 100%);
+    }
+    #casitas_container_4 {
+        background: rgb(46,0,46);
+        background: linear-gradient(180deg, rgba(15,3,26,1) 39%, rgba(15,3,26,0) 43%, rgba(0, 0, 0, 0) 100%);
+        overflow-y: hidden;
+        left: 0;
+        top: 0;
+    }
+    .casitas_about_1 {
+        color: #b8b8b8;;
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 1.6;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    #casitas_container_3 {
+        background: rgb(46,0,46);
+        background: linear-gradient(180deg, rgba(15,3,26,1) 39%, rgba(15,3,26,0) 43%, rgba(0, 0, 0, 0) 100%);
+        overflow-y: hidden;
+        left: 0;
+        top: 0;
+    }
+    #casitas_column_2 {
+        background-image: url('../images/WMRENTRYGATEOPEN.jpg');
+        width: 100%;
+        height: 90vh;        
+        background-position: center;
+        background-size: cover;
+        background-attachment: scroll;
+        z-index: -1;
+    }
+    .casitasColumnLeft {
+        padding-top: 100px;
+    }
+    .casitas_paragraphs {
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 1.6;
+        color: #b8b8b8;
+        padding: 50px 10px 0 10px;
+    }
+    #casitas_column_4 {
+        background-image: url('../images/WMRBR2BED.jpg');
+        width: 100%;
+        height: 90vh;        
+        background-position: center;
+        background-size: cover;
+        background-attachment: scroll;
+        z-index: -1;
+    }
 }
 
  /* Small devices (landscape phones, 576px and up) */
@@ -389,6 +472,20 @@ a:focus {
     #footer > div > div > div:nth-child(2) {
         border-right: solid rgb(43, 42, 42) 1px;
     }
+    #casitas_container_3 {
+        background: rgb(46,0,46);
+        background: linear-gradient(90deg, rgba(15,3,26,1) 50%, rgba(15,3,26,0) 69%, rgba(0, 0, 0, 0) 100%);
+    }
+    #casitas_container_4 {
+        background: rgb(46,0,46);
+        background: linear-gradient(90deg, rgba(0,0,0,0) 31%, rgba(15,3,26,1) 50%, rgba(15,3,26,1) 100%)
+    }
+    #casitas_column_2 {
+        height: 66vh; 
+    }
+    #casitas_column_4 {
+        height: 66vh; 
+    }
 }
 
  /* Large devices (desktops, 992px and up) */
@@ -420,6 +517,9 @@ a:focus {
     .bookButton {
         font-size: 20px;
         margin: 0 0 0 30px;
+    }
+    .casitas_paragraphs {
+        padding: 50px;
     }
 }
 
