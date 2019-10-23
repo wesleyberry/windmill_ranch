@@ -149,7 +149,7 @@ a:focus {
 /* -----Meet tom----- */
 #landing_container_1 {
     background-color: rgb(15, 3, 26);
-    padding: 150px 0 150px 0;
+    padding: 75px 0 75px 0;
 }
 .normalHeaders {
     color: #A9B300;
@@ -170,7 +170,7 @@ a:focus {
     width: auto; 
     border-style: solid; 
     border-width: 5px; 
-    border-radius: 4px; 
+    border-radius: 8px; 
     border-color: black;
 }
 /* ----Neighborhood----- */
@@ -236,7 +236,6 @@ a:focus {
         font-size: 50px;
         font-weight: 600;
         letter-spacing: 3px;
-        padding-top: 50px;
     }
     .landingPrivacyPara {
         color: #b8b8b8;
@@ -252,7 +251,7 @@ a:focus {
     .featuresButton {
         background-color: rgb(200, 211, 0);
         color: rgb(17, 17, 17);
-        margin: 30px 0 50px 0;
+        margin: 30px 0 0 0;
         border-color: #c8d300;
     }
     .featuresButton:hover {
@@ -317,8 +316,8 @@ a:focus {
         transition: 0.4s;
     }
     #footer {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 75px;
+        padding-bottom: 75px;
         border-top: solid #c8d300 3px;
     }
     #footer > div > div:nth-child(1) {
@@ -363,7 +362,6 @@ a:focus {
     .casitas_header_1 {
         text-align: center;
         font-size: 60px;
-        padding-top: 50px;
         padding-bottom: 25px;
         color: rgb(231, 231, 231);
     }
@@ -384,6 +382,7 @@ a:focus {
     #casitas_container_2 {
         background: rgb(46,0,46);
         background: radial-gradient(circle, rgba(46,0,46,1) 60%, rgba(77,0,77,1) 100%);
+        padding: 75px 0 75px 0;
     }
     #casitas_container_4 {
         background: rgb(46,0,46);
@@ -417,7 +416,7 @@ a:focus {
         z-index: -1;
     }
     .casitasColumnLeft {
-        padding-top: 100px;
+        padding-top: 75px;
     }
     .casitas_paragraphs {
         font-size: 20px;
@@ -435,6 +434,76 @@ a:focus {
         background-attachment: scroll;
         z-index: -1;
     }
+    #landing_container_2 > div {
+        padding: 50px 15px 50px 15px;
+    }
+    #casitas_container_5 {
+        background-image: url('../images/WMRLRFULLVIEW.jpg');
+        width: 100%;
+        height: auto;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow-y: hidden;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        left: 0;
+        top: 0;
+        border-top: solid #c8d300 3px;
+    }    
+    #casitas_container_7 {
+        padding: 0;
+        background-color: rgb(15, 3, 26);
+    }
+    .contain {
+        overflow: hidden;
+        padding: 15px;
+    }
+    .casitasImages {
+        width: 100%;        
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+        transition: 0.4s;
+        overflow: hidden;
+        -webkit-transform: scale(0.4s); 
+        -moz-transform: scale(0.4s);
+        -o-transform: scale(0.4s);
+    }
+    .casitasImages:hover {
+        transform: scale(1.1);
+        transition: 0.4s;
+        -webkit-transform: scale(0.4s); 
+        -moz-transform: scale(0.4s);
+        -o-transform: scale(0.4s);
+    }
+    #casitaImage_1 {
+        background-image: url('../images/WMRDININGKIT.jpg');
+    }
+    #casitaImage_2 {
+        background-image: url('../images/WMRGUESTBOOK.jpg');
+    }
+    #casitaImage_3 {
+        background-image: url('../images/WMRKUERIG.jpg');
+    }
+    #casitaImage_4 {
+        background-image: url('../images/WMRTVWALL.jpg');
+    }
+    #casitaImage_5 {
+        background-image: url('../images/WMRBRBEDONLY.jpg');
+    }
+    #casitaImage_6 {
+        background-image: url('../images/WMRBR2BATH.jpg');
+    }
+    #casitaImage_7 {
+        background-image: url('../images/WMRSHWRVIEW.jpg');
+    }
+    #casitaImage_8 {
+        background-image: url('../images/WMRSHWRWALL.jpg');
+    }
+    #casitaImage_9 {
+        background-image: url('../images/WMR2SHWRHD.jpg');
+    }
 }
 
  /* Small devices (landscape phones, 576px and up) */
@@ -442,6 +511,9 @@ a:focus {
     #footerLogo {
         height: 170px;
         width: auto;
+    }
+    #landing_container_2 > div {
+        padding: 75px 50px 75px 50px;
     }
 }
 
@@ -540,5 +612,8 @@ a:focus {
     }
     .bookButton {
         font-size: 24px;
+    }
+    .casitasImages {
+        height: 350px;
     }
 }
