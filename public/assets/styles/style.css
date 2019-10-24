@@ -443,6 +443,9 @@ a:focus {
         height: auto;
         /* background-position: center !important; */
         position: relative;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translatez(0);
+        transform: translatez(0);
         background-size: cover !important;
         background-attachment: fixed !important;
         overflow-y: hidden;
