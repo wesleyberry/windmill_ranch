@@ -442,13 +442,15 @@ a:focus {
         width: 100% !important;
         height: auto;
         background-position: center !important;
-        -webkit-backface-visibility: hidden;
-        -webkit-transform: translatez(0);
         transform: translatez(0);
         background-size: cover !important;
         /* position: relative !important; */
         background-attachment: fixed !important;
         /* position: fixed !important; */
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translatez(0);
+        -webkit-overflow-scrolling:touch;
+        transform: translate3d(0,0,0);
         overflow-y: hidden;
         padding-top: 100px;
         padding-bottom: 100px;
