@@ -23,6 +23,9 @@ a {
 a:focus {
     outline: none !important;
 }
+.row {
+    margin: 0 !important;
+}
 /* -------------pre-loader------------ */
 .preload {
     position: fixed;
@@ -525,6 +528,46 @@ a:focus {
     #ranch_container_1 {
         background-image: url('../images/WMRBARNSIDE2.jpg');
     }
+    #ranch_container_3 {
+        background-color:rgb(15, 3, 26);
+        padding: 75px 0 75px 0;
+    }
+    .card {
+        margin: 0 auto !important;
+        height: 100%;
+        border: none;
+        background-color: rgb(15, 3, 26);
+    }
+    .card-img-top {
+        height: 300px;
+        width: auto;
+    }
+    .card-title {
+        text-align: center;
+        color: #A9B300;
+        font-size: 30px;
+    }
+    .card-text {
+        color: #b8b8b8;
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    #ranch_container_2 {
+        padding: 0;
+        background-color: rgb(15, 3, 26);
+    }
+    .ranchImagesContainer {
+        max-height: 200px;
+        overflow: hidden;
+    }
+    .ranchImages {
+        width: 100%;
+    }
+    #ranch_container_2 > div > div:nth-child(3), 
+    #ranch_container_2 > div > div:nth-child(4) {
+        display: none;
+    }
 }
 
  /* Small devices (landscape phones, 576px and up) */
@@ -535,6 +578,12 @@ a:focus {
     }
     #landing_container_2 > div {
         padding: 75px 50px 75px 50px;
+    }
+    .card {
+        width: 500px !important;
+    }
+    .card-img-top {
+        height: 500px;
     }
 }
 
@@ -579,6 +628,24 @@ a:focus {
     #casitas_column_4 {
         height: 66vh; 
     }
+    .card {
+        width: 300px !important;
+    }
+    .card-img-top {
+        height: 200px;
+        width: 200px;
+    }
+    .card-body {
+        width: 200px;
+    }
+    #ranch_container_2 > div > div:nth-child(3), 
+    #ranch_container_2 > div > div:nth-child(4) {
+        display: block;
+    }
+    .ranchImagesContainer {
+        max-height: 250px;
+        padding-bottom: 30px;
+    }
 }
 
  /* Large devices (desktops, 992px and up) */
@@ -613,6 +680,20 @@ a:focus {
     }
     .casitas_paragraphs {
         padding: 50px;
+    }
+    .card {
+        width: auto !important;
+    }
+    .card-img-top {
+        height: 300px;
+        width: 300px;
+    }
+    .card-body {
+        width: 300px;
+    }
+    .ranchImagesContainer {
+        max-height: 170px;
+        padding: 0;
     }
 }
     /* Larger than iPads */
@@ -651,5 +732,8 @@ a:focus {
     .container_inside_casitas_7 {
         max-width: 1140px;
         margin: auto;
+    }
+    .ranchImagesContainer {
+        max-height: 200px;
     }
 }
