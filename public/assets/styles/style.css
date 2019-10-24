@@ -444,7 +444,7 @@ a:focus {
         background-position: center !important;
         transform: translatez(0);
         background-size: cover !important;
-        /* position: relative !important; */
+        position: relative !important;
         background-attachment: fixed !important;
         /* position: fixed !important; */
         -webkit-backface-visibility: hidden;
