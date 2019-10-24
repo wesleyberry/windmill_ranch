@@ -184,13 +184,6 @@ a:focus {
         right: 130%;
     }
 }
-@media (max-width: 400px) {
-    @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
-      #casitas_container_5 {
-        background-attachment: scroll;
-      }
-    }
-  }
 /* Extra Small Devices 300px */
 @media (min-width: 300px) {
     #logo {
@@ -650,3 +643,10 @@ a:focus {
         height: 450px;
     }
 }
+@media (max-width: 400px) {
+    @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+      #casitas_container_5 {
+        background-attachment: scroll !important;
+      }
+    }
+  }
