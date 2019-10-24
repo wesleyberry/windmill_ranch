@@ -441,13 +441,14 @@ a:focus {
         background-image: url('../images/WMRLRFULLVIEW.jpg');
         width: 100% !important;
         height: auto;
-        /* background-position: center !important; */
-        position: relative;
+        background-position: center !important;
         -webkit-backface-visibility: hidden;
         -webkit-transform: translatez(0);
         transform: translatez(0);
         background-size: cover !important;
+        /* position: relative !important; */
         background-attachment: fixed !important;
+        /* position: fixed !important; */
         overflow-y: hidden;
         padding-top: 100px;
         padding-bottom: 100px;
