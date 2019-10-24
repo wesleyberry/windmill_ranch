@@ -441,7 +441,8 @@ a:focus {
         background-image: url('../images/WMRLRFULLVIEW.jpg');
         width: 100% !important;
         height: auto;
-        background-position: center !important;
+        /* background-position: center !important; */
+        position: relative;
         background-size: cover !important;
         background-attachment: fixed !important;
         overflow-y: hidden;
