@@ -10,6 +10,15 @@
     <title>Windmill Ranch | Wimberley</title>
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preload">
+        <h3>Loading Windmill Ranch...</h3>
+        <img class="windmill" src="./assets/images/windmill_white.png" alt="windmill">
+        <img class="cloud1" src="./assets/images/cloud.png" alt="cloud1">
+        <img class="cloud2" src="./assets/images/cloud.png" alt="cloud2">
+        <img class="cloud3" src="./assets/images/cloud.png" alt="cloud3">
+    </div>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
             <a class="navbar-brand" href="#">
                 <img src="../assets/images/Logo.png" id="logo" class="d-inline-block align-top" alt="Windmill Ranch Logo">
@@ -20,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto" style="margin-left: auto, marginRight: 40px">
                     <li class="nav-item">
-                        <a class="nav-link active" href="/" role="button" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link" href="/" role="button" aria-haspopup="true" aria-expanded="false">
                             Home
                         </a>
                     </li>
@@ -30,7 +39,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ranch" role="button" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link active" href="/ranch" role="button" aria-haspopup="true" aria-expanded="false">
                             The Ranch
                         </a>
                     </li>
@@ -53,9 +62,24 @@
             </div>
         </nav>
     </div>
+    <!-- Backdrop -->
+    <div class="container-fluid heroAllPages" id="ranch_container_1">
+
+    </div>
+    <!-- About -->
+    <div class="titleAllPages container-fluid">
+        <div class="container">
+            <h1 class="headerEveryPage">The Ranch</h1>
+            <p class="aboutEveryPage">
+                Windmill Ranch is an 11 acre retreat with enough privacy and activities that some may choose to simply stay on-site during their stay and decompress. 
+                For those who wish to stay and explore the property, we have some recommendations.
+            </p>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./assets/js/loader.js"></script>
     <script src="./assets/js/navbar.js"></script>
 </body>
 </html>

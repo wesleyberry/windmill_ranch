@@ -223,7 +223,7 @@ a:focus {
         height: auto;
         background-position: center;
         background-size: cover;
-        background-attachment: fixed;
+        background-attachment: scroll;
         overflow-y: hidden;
         padding-top: 100px;
         padding-bottom: 100px;
@@ -356,17 +356,8 @@ a:focus {
     #navbarNav > ul > li:nth-child(5) {
         border-bottom: solid black 1px;
     }
-    #casitas_container_1 {
+    .heroAllPages {
         margin-top: 140px;
-    }
-    .casitas_header_1 {
-        text-align: center;
-        font-size: 60px;
-        padding-bottom: 25px;
-        color: rgb(231, 231, 231);
-    }
-    #casitas_container_1 {
-        background-image: url('../images/WMRCASSIDEVW4.jpg');
         width: 100%;
         min-height: 66vh;
         background-position: center;
@@ -376,10 +367,19 @@ a:focus {
         left: 0;
         top: 0;
     }
-    #casitas_container_2 > div > p {
+    .headerEveryPage {
+        text-align: center;
+        font-size: 60px;
+        padding-bottom: 25px;
+        color: rgb(231, 231, 231);
+    }
+    #casitas_container_1 {
+        background-image: url('../images/WMRCASSIDEVW4.jpg');
+    }
+    .titleAllPages > div > p {
         margin-bottom: 0;
     }
-    #casitas_container_2 {
+    .titleAllPages {
         background: rgb(46,0,46);
         background: radial-gradient(circle, rgba(46,0,46,1) 60%, rgba(77,0,77,1) 100%);
         padding: 75px 0 75px 0;
@@ -391,7 +391,7 @@ a:focus {
         left: 0;
         top: 0;
     }
-    .casitas_about_1 {
+    .aboutEveryPage {
         color: #b8b8b8;;
         font-size: 20px;
         letter-spacing: 1px;
@@ -474,7 +474,7 @@ a:focus {
         padding: 20px 20px 20px 20px;
     }
     #casitas_container_7 {
-        padding: 0;
+        padding: 0 0 75px 0;;
         background-color: rgb(15, 3, 26);
     }
     .contain {
@@ -521,6 +521,9 @@ a:focus {
     }
     #casitaImage_9 {
         background-image: url('../images/WMR2SHWRHD.jpg');
+    }
+    #ranch_container_1 {
+        background-image: url('../images/WMRBARNSIDE2.jpg');
     }
 }
 
@@ -612,7 +615,12 @@ a:focus {
         padding: 50px;
     }
 }
-
+    /* Larger than iPads */
+@media (min-width: 1025px) {
+    #landing_container_2 {
+        background-attachment: fixed;
+    }
+}
  /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     #heading {
@@ -640,11 +648,8 @@ a:focus {
     .casitasImages:hover {
         height: 450px;
     }
-}
-@media (max-width: 400px) {
-    @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
-      #casitas_container_5 {
-        background-attachment: scroll !important;
-      }
+    .container_inside_casitas_7 {
+        max-width: 1140px;
+        margin: auto;
     }
-  }
+}
