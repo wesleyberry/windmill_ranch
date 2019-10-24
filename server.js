@@ -3,7 +3,7 @@ const path = require('path');
 const express = require('express');
 const session = require("express-session");
 const passport = require("./config/passport");
-const db = require('./models');
+// const db = require('./models');
 const routes = require('./routes');
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -47,7 +47,7 @@ app.get("/contact", function(req, res) {
 });
 
 
-db.sequelize.sync(syncOptions).then(function() {
+// db.sequelize.sync(syncOptions).then(function() {
   app.listen(PORT, function() {
     console.log(
       "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
@@ -55,6 +55,6 @@ db.sequelize.sync(syncOptions).then(function() {
       PORT
     );
   });
-});
+// });
 
 module.exports = app;
