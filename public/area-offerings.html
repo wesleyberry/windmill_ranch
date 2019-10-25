@@ -5,23 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
     <link rel="stylesheet" type="text/css" href="./assets/styles/style.css" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/calendar.css" />
     <title>Windmill Ranch | Wimberley</title>
 </head>
-<body>
+<body style="background-color: rgb(15, 3, 26);">
+    <!-- Preloader -->
+    <div class="preload">
+        <h3>Loading Windmill Ranch...</h3>
+        <img class="windmill" src="./assets/images/windmill_white.png" alt="windmill">
+        <img class="cloud1" src="./assets/images/cloud.png" alt="cloud1">
+        <img class="cloud2" src="./assets/images/cloud.png" alt="cloud2">
+        <img class="cloud3" src="./assets/images/cloud.png" alt="cloud3">
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <a class="navbar-brand" href="#">
+            <img src="../assets/images/Logo.png" id="logo" class="d-inline-block align-top" alt="Windmill Ranch Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto" style="margin-left: auto, marginRight: 40px">
+                <li class="nav-item">
+                    <a class="nav-link" href="/" role="button" aria-haspopup="true" aria-expanded="false">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/casitas" role="button" aria-haspopup="true" aria-expanded="false">
+                    Casitas 
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/ranch" role="button" aria-haspopup="true" aria-expanded="false">
+                        The Ranch
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/area-offerings" role="button" aria-haspopup="true" aria-expanded="false">
+                        Area Offerings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact" role="button" aria-haspopup="true" aria-expanded="false">
+                        Contact
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.airbnb.com/rooms/37092630?source_impression_id=p3_1571845889_d0irCvUKXRa3Wv0F" target="_blank">
+                        <button type="button" class="btn btn-primary bookButton">Book Now</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid heroAllPages" id="map">
+    </div>
+    <!-- About -->
+    <div class="container-fluid titleAllPages">
+        <div class="container">
+            <h1 class="headerEveryPage">Area Offerings</h1>
+            <p class="aboutEveryPage">The Wimberley Valley and surrounding areas are known for many diverse activities, in addition to just being a beautiful sightseeing area.
+                    The following are some activities you might consider. 
+                    If you can't find an event you're looking for while you're here, ask Tom! 
+                    He has lived in Wimberley his whole life and is an expert on the area.
+            </p>
+            <p class="aboutEveryPage">*More specific recommendations are provided when you arrive at your casita.
+            </p>
+        </div>
+    </div>
+    <!-- Recommendations -->
+    <div class="container-fluid" style="padding: 70px 0 0 0;">
+        <div class="container" id="recommendations">
+            <div class="normalHeaders">A Few Recommendations</div>
+            <p class="recommendationPara"><span style="color: #A9B300; font-weight: 600;">Dining Options: </span>
+                From food trucks to fine dining, our area offers many choices.
+            </p>
+            <p class="recommendationPara">-
+                <a class="inLineLinks" href="https://www.inozwimberley.com/" target="_blank">Ino’z Brew & Chew, Wimberley Square. </a>
+                Open 7 days a week, casual full-service with a full bar, indoor/outdoor seating, weekend live music with a large outdoor deck overlooking beautiful Cypress Creek.
+            </p>
+            <p class="recommendationPara">-
+                <a class="inLineLinks" href="https://hayscitystoretx.com/" target="_blank">Hays City Store</a>, FM 3237/FM 150 intersection. Very popular restaurant with a full bar and occasional live music located 10 minutes from the ranch. 
+                Turn left when exiting property, then left again at intersection with FM3237.
+            </p>
+            <p class="recommendationPara"><span style="color: #A9B300; font-weight: 600;">Wineries, Breweries, and Distilleries: </span>
+                If visiting and sampling the products produced by wineries, distilleries and breweries is on your to do list, you’ve come to the right place. 
+                Within 20 miles of Windmill Ranch you will find no less than two dozen of these type businesses.
+                Several wineries are literally within a 10 minute drive of the ranch. 
+                One that we highly recommend is Wimberley Valley Winery located a mere quarter mile from us.</p>
+            <p class="recommendationPara"><span style="color: #A9B300; font-weight: 600;">Shopping Suggestions: </span>
+                From quaint local shopping to a full-blown Outlet Mall shopping experience, our area offers lots of options.
+                Market Days are a big draw in our area. The first Saturday of each month (except Jan -Feb) over 450 booths open from 7am -3pm. Located on FM 2325.
+            </p>
+            <p class="recommendationPara">Located less than a quarter mile towards RR12 on Lone Man Mtn Road is Changes Resale Shop. 
+                The shop is part of Life Changes, one of the top estate sale businesses in our area and many of their items come from such sales. 
+                Currently their consignment shop is open Wed - Sat.
+            </p>
+        </div>
+    </div>
+    <!-- Calendar -->
     <div id='wrap'>
+        <div class="normalHeaders">Events</div>
         <div id='calendar'></div>
         <div style='clear:both'></div>
+    </div>
+    <!-- Footer -->
+    <div class="container-fluid" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <img src="../assets/images/Logo.png" alt="logo" id="footerLogo">
+                    <p style="font-size: 30px; color: #4d004d;">Casual, Fine Lodging</p>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <h2 class="footerHeaders">Find</h2>
+                    <p><a href="/" class="footerText">Home</a></p>
+                    <p><a href="/casitas" class="footerText">Casitas</a></p>
+                    <p><a href="/ranch" class="footerText">The Ranch</a></p>
+                    <p><a href="/area-offerings" class="footerText">Area-offerings</a></p>
+                    <p><a href="/contact" class="footerText">Contact</a></p>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <h2 class="footerHeaders">Get In Touch</h2>
+                    <p><strong class="footerText">Email:</strong> <a href="mailto:tom55key@gmail.com" class="footerText" style="overflow-wrap: break-word;">tom55key@gmail.com</a></p>
+                    <a href="https://www.airbnb.com/rooms/37092630?source_impression_id=p3_1571845889_d0irCvUKXRa3Wv0F" target="_blank">
+                        <button type="button" class="btn btn-primary bookButton">Book Now</button>
+                    </a>
+                </div>
+            </div>
+            <div style="width: 100%; height: 50px;"></div>
+            <div class="row" style="text-align:center; justify-content:center">
+                <p class="socialIcons">
+                    <a href="https://www.facebook.com/Windmill-Ranch-Lodging-627653064335404/" target="_blank" class="icons">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </p>
+                <p class="socialIcons">
+                    <a href="https://www.airbnb.com/rooms/37092630?source_impression_id=p3_1571844851_HjuTgwhXY60ahUbr" target="_blank" class="icons">
+                        <i class="fab fa-airbnb"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBknTCSv1mo9c7YL2F4yRfILunjsL2YoY&callback=initMap"></script>
     <script src="./assets/js/calendar.js"></script>
     <script src="./assets/js/events.js"></script>
     <script src="./assets/js/loader.js"></script>
     <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/map.js"></script>
 </body>
 </html>
