@@ -12,7 +12,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 h1 {
     font-family: 'Montserrat', sans-serif;
@@ -153,6 +153,7 @@ a:focus {
 #landing_container_1 {
     background-color: rgb(15, 3, 26);
     padding: 75px 0 75px 0;
+    z-index: 5;
 }
 .normalHeaders {
     color: #A9B300;
@@ -194,7 +195,7 @@ a:focus {
     .carousel {
         margin-top: 0px;
         height: 100vh;
-        overflow: auto;
+        overflow: hidden;
     }
     .carouselImages {
         margin-top: 0px;
@@ -220,18 +221,28 @@ a:focus {
     #meetTomPara {
         padding-top: 50px;
     }
-    #landing_container_2 {
-        background-image: url('../images/WMRCASSIDEVW4.jpg');
+    .landingWrapCont {
         width: 100%;
         height: auto;
+        overflow-y: hidden;
+        /* padding-top: 100px; */
+        /* padding-bottom: 100px; */
+        left: 0;
+        z-index: 3;
+        padding: 0;
+    }
+    #landing_container_2 {
+        background-image: url('../images/WMRCASSIDEVW4.jpg');
         background-position: center;
         background-size: cover;
         background-attachment: scroll;
-        overflow-y: hidden;
-        padding-top: 100px;
-        padding-bottom: 100px;
-        left: 0;
-        top: 0;
+        z-index: 5;
+        height: 100%;
+        width: 100%;
+        padding: 200px 15px 200px 15px;
+    }
+    #landing_container_2 > div {
+        padding: 50px 10px 50px 10px;
     }
     .landingPrivacy {
         color: #A9B300;
@@ -261,7 +272,6 @@ a:focus {
         transition: 0.4s;
         color: white;
         background-color: rgb(86, 90, 0);
-        margin-bottom: 50px;
         border-color: rgb(86, 90, 0);
         text-decoration: none !important;
         outline: 0 !important;
@@ -285,6 +295,7 @@ a:focus {
     }
     .testimonialContainer {
         background-color: rgb(15, 3, 26);
+        z-index: 5;
     }
     .testText {
         color: #b8b8b8;
@@ -436,9 +447,6 @@ a:focus {
         background-size: cover;
         background-attachment: scroll;
         z-index: -1;
-    }
-    #landing_container_2 > div {
-        padding: 50px 15px 50px 15px;
     }
     #casitas_container_5 {
         background-image: url('../images/WMRLRFULLVIEW.jpg');
@@ -661,7 +669,7 @@ a:focus {
         font-size: 100px;
     }
     #subHeading {
-        margin-top: 280px;
+        margin-top: 240px;
     }
     #meetTomPara {
         padding-left: 70px;
@@ -699,7 +707,7 @@ a:focus {
     /* Larger than iPads */
 @media (min-width: 1025px) {
     #landing_container_2 {
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
     }
 }
  /* Extra large devices (large desktops, 1200px and up) */
