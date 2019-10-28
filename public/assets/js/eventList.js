@@ -14,14 +14,20 @@ $('#submitEvent').on('click', function(e) {
     var year = $('#year').val();
     var day = $('#day').val();
     var month = $('#month').val();
-    var time = $('#time').val();
     var description = $('#eventDesc').val();
+    var start = $('#startTime').val();
+    var startP = $('#startP').val();
+    var end = $('#endTime').val();
+    var endP = $('#endP').val();
     axios.post('/api/events', {
         eventName,
         year,
         day,
         month,
-        time,
+        start,
+        startP,
+        end,
+        endP,
         description
     }).then(
         () => location.reload()

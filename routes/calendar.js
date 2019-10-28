@@ -31,9 +31,11 @@ router.post('/events', isAuthenticated, (req, res) => {
             year: event.year,
             day: event.day,
             month: event.month,
-            start: event.time,
             description: event.description,
-            end: 0
+            start: event.start,
+            startP: event.startP,
+            end: event.end,
+            endP: event.endP
         }).then(response => res.json(response))
         .catch(err => res.json(err))
     }

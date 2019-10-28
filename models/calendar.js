@@ -6,6 +6,8 @@ module.exports = (sequelize, DataTypes) => {
         day: DataTypes.INTEGER,
         start: DataTypes.STRING,
         end: DataTypes.STRING,
+        startP: DataTypes.STRING,
+        endP: DataTypes.STRING,
         description: DataTypes.STRING(1234)
     }, {
         timestamps: false
