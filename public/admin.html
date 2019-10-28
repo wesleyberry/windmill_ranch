@@ -54,11 +54,15 @@
                     <div class="row rowSpecial">
                           <div class="form-group">
                               <label for="time">Time</label>
-                              <input type="text" class="form-control" id="time" aria-describedby="specialHelp" placeholder="Enter Time of Event">
+                              <input type="text" class="form-control" id="time" aria-describedby="specialHelp" placeholder="Enter Start Time of Event">
                           </div>
                     </div>
+                    <div class="row">
+                      <label for="eventDesc">Event Description</label>
+                      <input type="text" class="form-control" id="eventDesc" aria-describedby="specialHelp" placeholder="Enter Event Description">
+                    </div>
                     <div style="text-align: center; padding: 50px 0 50px 0;">
-                      <input class="btn btn-primary submitButton" type="submit" value="Submit" id="submitBand">
+                      <input class="btn btn-primary submitButton" type="submit" value="Submit" id="submitEvent">
                     </div>
                 </form>
                 <table class="table">
@@ -84,5 +88,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/eventList.js"></script>
 </body>
 </html>

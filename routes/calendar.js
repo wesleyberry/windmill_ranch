@@ -24,14 +24,16 @@ router.delete("/events:id", isAuthenticated, (req, res) => {
 
 router.post('/events', isAuthenticated, (req, res) => {
     const event = req.body;
+    console.log(event);
     if(req.user.name === 'rootroot') {
         db.Event.create({
-            event: event.event,
+            event: event.eventName,
             year: event.year,
             day: event.day,
             month: event.month,
-            start: event.start,
-            end: event.end
+            start: event.time,
+            description: event.description,
+            end: 0
         }).then(response => res.json(response))
         .catch(err => res.json(err))
     }
