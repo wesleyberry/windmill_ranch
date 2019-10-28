@@ -600,6 +600,49 @@ a:focus {
         transition: 0.4s;
         text-decoration: underline #960096 solid !important;
     }
+    .singleRowList {
+        padding: 25px 0 25px 0;
+    }
+    .listDates {
+        border: solid #b8b8b8 1px;
+        color: #b8b8b8;
+        font-size: 18px;
+        padding: 10px 0 10px 0;
+        text-align: center;
+    }
+    .listDescription {
+        border: solid #b8b8b8 1px;
+        color: #b8b8b8;
+        font-size: 18px;
+        padding: 10px 0 10px 0;
+        text-align: center;
+    }
+    #formContainer {
+        padding: 75px 0 75px 0;
+    }
+    #contact_container_1 {
+        background-image: url('../images/WMRENTRYSIGNLG.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    .submitButton {
+        background-color: #960096 !important;
+        color: rgb(231, 231, 231);
+        border-color: #960096 !important;
+    }
+
+    .submitButton:hover {
+        transition: 0.4s;
+        color: white;
+        background-color: #4d004d !important;
+        border-color: #4d004d !important;
+        text-decoration: none !important;
+        outline: 0 !important;
+    }
+    .text-muted {
+        color: #b8b8b8 !important;
+    }
 }
 
  /* Small devices (landscape phones, 576px and up) */

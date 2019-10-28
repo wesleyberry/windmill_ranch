@@ -12,6 +12,7 @@ $('#submitMessage').click(e => {
             message
         }).then((response) => {
             if (response.data === 200) {
+                $('form :input').val('');
                 alert("Your email has been sent!");
             } else {
                 alert("There was a problem sending your email");
