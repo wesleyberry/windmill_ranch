@@ -198,6 +198,7 @@ a:focus {
     #logo {
         height: 100px;
         width: auto;
+        transition: 0.4s;
     }
     .carousel {
         margin-top: 0px;
@@ -397,7 +398,7 @@ a:focus {
         color: rgb(231, 231, 231);
     }
     #casitas_container_1 {
-        background-image: url('../images/WMRCASSIDEVW4.jpg');
+        background-image: url('../images/WMRCASSIDEVW3.jpg');
     }
     .titleAllPages > div > p {
         margin-bottom: 0;
@@ -413,6 +414,7 @@ a:focus {
         overflow-y: hidden;
         left: 0;
         top: 0;
+        padding: 0;
     }
     .aboutEveryPage {
         color: #b8b8b8;;
@@ -428,6 +430,7 @@ a:focus {
         overflow-y: hidden;
         left: 0;
         top: 0;
+        padding: 0;
     }
     #casitas_column_2 {
         background-image: url('../images/WMRENTRYGATEOPEN.jpg');
@@ -447,6 +450,7 @@ a:focus {
         line-height: 1.6;
         color: #b8b8b8;
         padding: 0 10px 0 10px;
+        text-align: center;
     }
     #casitas_column_4 {
         background-image: url('../images/WMRBR2BED.jpg');
@@ -614,7 +618,7 @@ a:focus {
         border: solid #b8b8b8 1px;
         color: #b8b8b8;
         font-size: 18px;
-        padding: 10px 0 10px 0;
+        padding: 10px 15px 10px 15px;
         text-align: center;
     }
     #formContainer {
@@ -642,6 +646,9 @@ a:focus {
     }
     .text-muted {
         color: #b8b8b8 !important;
+    }
+    .eventsGoHere {
+        padding: 0 0 75px 0 !important;
     }
 }
 
@@ -764,6 +771,9 @@ a:focus {
         max-height: 170px;
         padding: 0;
     }
+    .contactContainer {
+        padding: 0 75px 0 75px;
+    }
 }
     /* Larger than iPads */
 @media (min-width: 1025px) {
@@ -812,5 +822,8 @@ a:focus {
     }
     .ranchImagesContainer {
         max-height: 200px;
+    }
+    .contactContainer {
+        padding: 0 150px 0 150px;
     }
 }

@@ -12,7 +12,7 @@ router.route('/events').get((req, res) => {
 });
 
 router.delete("/events:id", isAuthenticated, (req, res) => {
-    if(req.user.name === 'rootroot') {
+    if(req.user.name === 'root') {
         db.Event.destroy({
             where: {
                 id: req.params.id
@@ -25,7 +25,7 @@ router.delete("/events:id", isAuthenticated, (req, res) => {
 router.post('/events', isAuthenticated, (req, res) => {
     const event = req.body;
     console.log(event);
-    if(req.user.name === 'rootroot') {
+    if(req.user.name === 'root') {
         db.Event.create({
             event: event.eventName,
             year: event.year,
