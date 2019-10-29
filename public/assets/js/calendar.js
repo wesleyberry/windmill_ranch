@@ -158,7 +158,7 @@
                     allDay: false
                 });
             }
-
+console.log(eventSources);
         
             options = $.extend(true, {},
                 defaults,
