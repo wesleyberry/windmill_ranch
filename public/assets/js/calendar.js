@@ -153,12 +153,11 @@
                 eventSources[0].push({
                     className: 'important',
                     title: eventInfo[i].event,
-                    start: new Date(eventInfo[i].year, eventInfo[i].month, eventInfo[i].day, eventInfo[i].start),
-                    end: new Date(eventInfo[i].year, eventInfo[i].month, eventInfo[i].day, eventInfo[i].end),
+                    start: new Date(eventInfo[i].year, eventInfo[i].month, eventInfo[i].day, eventInfo[i].start, eventInfo[i].startMinutes),
+                    end: new Date(eventInfo[i].year, eventInfo[i].month, eventInfo[i].day, eventInfo[i].end, eventInfo[i].endMinutes),
                     allDay: false
                 });
             }
-console.log(eventSources);
         
             options = $.extend(true, {},
                 defaults,

@@ -35,7 +35,9 @@ router.post('/events', isAuthenticated, (req, res) => {
             start: event.start,
             startP: event.startP,
             end: event.end,
-            endP: event.endP
+            endP: event.endP,
+            startMinutes: event.startMinutes,
+            endMinutes: event.endMinutes
         }).then(response => res.json(response))
         .catch(err => res.json(err))
     }

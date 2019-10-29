@@ -8,6 +8,8 @@ module.exports = (sequelize, DataTypes) => {
         end: DataTypes.STRING,
         startP: DataTypes.STRING,
         endP: DataTypes.STRING,
+        startMinutes: DataTypes.INTEGER,
+        endMinutes: DataTypes.INTEGER,
         description: DataTypes.STRING(1234)
     }, {
         timestamps: false

@@ -63,6 +63,8 @@ $('#submitEvent').on('click', function(e) {
     var startP = $('#startP').val();
     var end = $('#endTime').val();
     var endP = $('#endP').val();
+    var startMinutes = $('#startMinutes').val();
+    var endMinutes = $('#endMinutes').val();
     if(start > 0 && start < 13) {
         startP = 'AM';
     } else {
@@ -82,6 +84,8 @@ $('#submitEvent').on('click', function(e) {
         startP,
         end,
         endP,
+        startMinutes,
+        endMinutes,
         description
     }).then(
         () => location.reload()
