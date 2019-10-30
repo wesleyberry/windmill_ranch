@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
     <link rel="stylesheet" type="text/css" href="./assets/styles/style.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/styles/calendar.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/calendar/all.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/styles/calendar.css" /> -->
     <title>Windmill Ranch | Wimberley</title>
 </head>
 <body style="background-color: rgb(15, 3, 26);">
@@ -109,7 +110,7 @@
         </div>
     </div>
     <!-- Calendar -->
-    <div id='wrap'>
+    <!-- <div id='wrap'>
         <div class="normalHeaders">Events</div>
         <div id='calendar'></div>
         <div style='clear:both'></div>
@@ -117,6 +118,40 @@
     <div class="container-fluid" id="areaListContainer">
         <div class="container eventsGoHere">
             
+        </div>
+    </div> -->
+    <div class="calendar disable-selection" id="calendar">
+        <div class="left-side">
+            <div class="current-day text-center">
+                <h1 class="calendar-left-side-day"></h1>
+                <div class="calendar-left-side-day-of-week"></div>
+            </div>
+            <div class="current-day-events">
+                <div>Current Events:</div>
+                <ul class="current-day-events-list"></ul>
+            </div>
+            <div class="add-event-day">
+                <input type="text" class="add-event-day-field" placeholder="Create an Event">
+                <span class="fa fa-plus-circle cursor-pointer add-event-day-field-btn"></span>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="text-right calendar-change-year">
+                <div class="calendar-change-year-slider">
+                    <span class="fa fa-caret-left cursor-pointer calendar-change-year-slider-prev"></span>
+                    <span class="calendar-current-year"></span>
+                    <span class="fa fa-caret-right cursor-pointer calendar-change-year-slider-next"></span>
+                </div>
+            </div>
+            <div class="calendar-month-list">
+                <ul class="calendar-month"></ul>
+            </div>
+            <div class="calendar-week-list">
+                <ul class="calendar-week"></ul>
+            </div>
+            <div class="calendar-day-list">
+                <ul class="calendar-days"></ul>
+            </div>
         </div>
     </div>
     <!-- Footer -->
@@ -163,11 +198,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBknTCSv1mo9c7YL2F4yRfILunjsL2YoY&callback=initMap"></script>
-    <script src="./assets/js/calendar.js"></script>
+    <!-- <script src="./assets/js/calendar.js"></script> -->
     <script src="./assets/js/eventListPublic.js"></script>
-    <script src="./assets/js/events.js"></script>
+    <!-- <script src="./assets/js/events.js"></script> -->
     <script src="./assets/js/loader.js"></script>
     <script src="./assets/js/navbar.js"></script>
     <script src="./assets/js/map.js"></script>
+    <script async src="./assets/calendar/all.js"></script>
 </body>
 </html>
