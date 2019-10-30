@@ -592,6 +592,7 @@
     
         function updateTodayButton() {
             var today = new Date();
+            today = 'Thu Oct 31 2019 11:58:57 GMT-0500 (Central Daylight Time)';
             if (today >= currentView.start && today < currentView.end) {
                 header.disableButton('today');
             }

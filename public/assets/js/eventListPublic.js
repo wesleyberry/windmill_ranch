@@ -48,6 +48,7 @@ axios.get('api/events').then(response => {
             event: results[i].event,
             description: results[i].description,
             date: new Date(results[i].year, month, results[i].day, results[i].start, results[i].startMinutes),
+            startM: results[i].startMinutes,
             time: 0
         });
     }
@@ -59,12 +60,15 @@ axios.get('api/events').then(response => {
     // Creates Date and Time Separately
     var peri;
     for(let i = 0; i < newArray.length; i++) {
+        if(newArray[i].startM === 0) {
+            newArray[i].startM = '00';
+        }
         if(newArray[i].date.getHours() > 0 && newArray[i].date.getHours() < 13) {
             peri = 'AM';
         } else {
             peri = 'PM';
         }
-        newArray[i].time = (((newArray[i].date).getHours() + 24) % 12 || 12) + " " + peri;
+        newArray[i].time = (((newArray[i].date).getHours() + 24) % 12 || 12) + ':' + (newArray[i].startM).toString() + " " + peri;
     }
     // Map to Screen
     for(let i = 0; i < newArray.length; i++) {
