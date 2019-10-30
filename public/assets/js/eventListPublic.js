@@ -59,7 +59,6 @@ axios.get('api/events').then(response => {
     // Creates Date and Time Separately
     var peri;
     for(let i = 0; i < newArray.length; i++) {
-        console.log(newArray[i].date.getHours());
         if(newArray[i].date.getHours() > 0 && newArray[i].date.getHours() < 13) {
             peri = 'AM';
         } else {

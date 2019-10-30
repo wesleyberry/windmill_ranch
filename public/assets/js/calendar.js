@@ -148,13 +148,54 @@
                 delete options.events;
             }
 
-            var eventInfo = response.data;
+            var eventInfo = response.data; 
             for(var i = 0; i < eventInfo.length; i++) {
+                var month = eventInfo[i].month;
+                switch(month) {
+                    case 0:
+                        month = 12;
+                        break;
+                    case 1:
+                        month = 0;
+                        break;
+                    case 2:
+                        month = 1;
+                        break;
+                    case 3:
+                        month = 2;
+                        break;
+                    case 4:
+                        month = 3;
+                        break;
+                    case 5:
+                        month = 4;
+                        break;
+                    case 6:
+                        month = 5;
+                        break;
+                    case 7:
+                        month = 6;
+                        break;
+                    case 8:
+                        month = 7;
+                        break;
+                    case 9:
+                        month = 8;
+                        break;
+                    case 10:
+                        month = 9;
+                        break;
+                    case 11:
+                        month = 10;
+                        break;
+                    case 12:
+                        month = 11;
+                } 
                 eventSources[0].push({
                     className: 'important',
                     title: eventInfo[i].event,
-                    start: new Date(eventInfo[i].year, eventInfo[i].month, eventInfo[i].day, eventInfo[i].start, eventInfo[i].startMinutes),
-                    end: new Date(eventInfo[i].year, eventInfo[i].month, eventInfo[i].day, eventInfo[i].end, eventInfo[i].endMinutes),
+                    start: new Date(eventInfo[i].year, month, eventInfo[i].day, eventInfo[i].start, eventInfo[i].startMinutes),
+                    // end: new Date(eventInfo[i].year, eventInfo[i].month, eventInfo[i].day, eventInfo[i].end, eventInfo[i].endMinutes),
                     allDay: false
                 });
             }
