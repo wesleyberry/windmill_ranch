@@ -1,6 +1,6 @@
 # Windmill Ranch Lodging - Wimberley, TX
 - - -
-##About Windmill Ranch Lodging
+## About Windmill Ranch Lodging
 Windmill Ranch is a bed and breakfast in Wimberley, TX. Its main attractions are its high-end amenities, privacy, and location. This client-commissioned web application is the company website for Windmill Ranch. The admin can log in to the admin panel with his or her credentials and manage events. These events are stored in a MySQL database and displayed via a calendar on the website's public domain.
 
 ### Users can find the deployed application [here](https://windmillranch.co).
