@@ -229,6 +229,10 @@ a:focus {
     #meetTomPara {
         padding-top: 50px;
     }
+    #landing_container_1 > div > div > div.col-sm-12.col-md-8.col-lg-9 {
+        display: flex; 
+        margin: auto;
+    }
     .landingWrapCont {
         width: 100%;
         height: auto;
@@ -676,12 +680,13 @@ a:focus {
     }
     #subHeading {
         font-size: 70px;
+        margin-top: 200px;
     }
     #landing_container_1 > div > div > div.col-sm-12.col-md-4.col-lg-3 {
         padding: 0;
     }
     #landing_container_1 > div > div > div.col-sm-12.col-md-8.col-lg-9 {
-        margin: 0;
+        padding: 0 0 0 75px;
     }
     #meetTomPara {
         padding-top: 0;
@@ -747,6 +752,9 @@ a:focus {
     }
     #meetTomPara {
         padding-left: 70px;
+    }
+    #landing_container_1 > div > div > div.col-sm-12.col-md-8.col-lg-9 {
+        padding: 0;
     }
     #footerLogo {
         height: 200px;
