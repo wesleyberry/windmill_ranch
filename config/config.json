@@ -1,0 +1,25 @@
+{
+    "development": {
+      "username": "root",
+      "password": "aceofspades!1",
+      "database": "windmill_db",
+      "host": "localhost",
+      "dialect": "mysql",
+      "port": 3306,
+      "logging": false
+    },
+    "test": {
+      "username": "root",
+      "password": "",
+      "database": "windmill_db",
+      "host": "localhost",
+      "dialect": "mysql",
+      "logging": false
+    },
+    "production": {
+      "username": "",
+      "password": "",
+      "database": "windmill_db",
+      "dialect": "mysql"
+    }
+  }
