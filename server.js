@@ -24,7 +24,7 @@ if (process.env.NODE_ENV === "test") {
 
 const isAuthenticated = require("./config/middleware/isAuthenticated");
 app.get("/admin", isAuthenticated, function(req, res) {
-  if(req.user.name === 'rootroot') {
+  if(req.user.name === 'root') {
     res.sendFile(path.join(__dirname, "/public/admin.html"));
   } else {
     res.sendFile(path.join(__dirname, "/public/login.html"));
