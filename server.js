@@ -45,6 +45,9 @@ app.get("/area-offerings", function(req, res) {
 app.get("/contact", function(req, res) {
   res.sendFile(path.join(__dirname, "/public/contact.html"));
 });
+app.get("/", function(req, res) {
+  res.sendFile(path.join(__dirname, "/public/index.html"));
+});
 
 
 db.sequelize.sync(syncOptions).then(function() {
