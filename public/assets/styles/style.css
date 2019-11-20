@@ -580,7 +580,7 @@ a:focus {
     }
     .card-text {
         color: #b8b8b8;
-        text-align: center;
+        text-align: left;
         font-size: 20px;
         line-height: 1.6;
     }
