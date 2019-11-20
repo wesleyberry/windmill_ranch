@@ -32,7 +32,7 @@ router.post('/messages', (req, res) => {
       
     var mailOptions = {
         from: 'Mailer Contact <test@berry-development.com>',
-        to: 'wesleyberry52@gmail.com',
+        to: 'tom55key@gmail.com',
         subject: "You have a new email from your website!",
         html: results
     };
