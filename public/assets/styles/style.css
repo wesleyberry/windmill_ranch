@@ -67,14 +67,6 @@ a:focus {
     position: absolute;
     bottom: 0%;
 }
-.preload h3 {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-75%);
-    color: white;
-    font-size: 40px;
-    text-align: center;
-}
 .preload-finish {
     opacity: 0;
     pointer-events: none;
@@ -195,6 +187,14 @@ a:focus {
 }
 /* Extra Small Devices 300px */
 @media (min-width: 300px) {
+    .preload h3 {
+        position: absolute;
+        top: 35%;
+        transform: translateY(-75%);
+        color: white;
+        font-size: 40px;
+        text-align: center;
+    }
     #logo {
         height: 100px;
         width: auto;
@@ -224,7 +224,7 @@ a:focus {
         font-size: 50px;
         color: rgb(241, 219, 253);
         text-shadow: 3px 3px 2px rgb(0, 0, 0);
-        margin-top: 250px;
+        margin-top: 50px;
     }
     #meetTomPara {
         padding-top: 50px;
@@ -667,6 +667,9 @@ a:focus {
 
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+    .preload h3 {
+        top: 50%;
+    }
     #footerLogo {
         height: 170px;
         width: auto;
