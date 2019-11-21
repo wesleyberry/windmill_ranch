@@ -7,7 +7,7 @@ $('#submitCredentials').on('click', function() {
         password
     }).then(response => {
         if(response.status === 200) {
-            window.location.assign('/admin');
+            location.href = '/admin';
         } 
     })
     .catch(() => alert(
