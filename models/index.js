@@ -22,20 +22,6 @@ if (env === "production") {
     }
   );
 } else if (env === "development"){
-//   var sequelize = new Sequelize(
-//     process.env.db_database,
-//     process.env.db_user,
-//     process.env.db_password,
-//     {
-//       "username":process.env.db_user,
-//       "password":process.env.db_password,
-//       "database":process.env.db_database,
-//       "dialect": "mysql",
-//       "host":process.env.db_host,
-//       "port":process.env.db_port
-//     }
-//   )
-// } else {
   var sequelize = new Sequelize(
     process.env.database,
     process.env.username1,

@@ -4,6 +4,7 @@ const db = require('../models');
 const passport = require("../config/passport");
 require('dotenv').config();
 
+// Allows user to sign in to admin dashboard
 router.post('/users', passport.authenticate('local'), (req, res) => {
     const name = req.body.name;
     const password = req.body.password;
@@ -13,6 +14,7 @@ router.post('/users', passport.authenticate('local'), (req, res) => {
     });
 });
 
+// Signs up user
 router.post('/users/signup', (req, res) => {
     db.User.create({
         name: req.body.name,
@@ -21,6 +23,7 @@ router.post('/users/signup', (req, res) => {
     .catch(err => res.json(err))
 });
 
+// Checks DB to see if user exists
 router.post('/users/checkDB', (req, res) => {
     db.User.create({
         name: process.env.NAME,

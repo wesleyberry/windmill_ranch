@@ -10,7 +10,6 @@ const PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static('public'));
-// app.use('/public', express.static(path.join(__dirname, '/public')));
 
 app.use(session({ secret: process.env.PASSPORT_SECRET, resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
@@ -23,6 +22,7 @@ if (process.env.NODE_ENV === "test") {
   syncOptions.force = false;
 }
 
+// Calls middleare for authentication
 const isAuthenticated = require("./config/middleware/isAuthenticated");
 app.get("/admin", isAuthenticated, function(req, res) {
   if(req.user.name === 'root') {
@@ -31,6 +31,7 @@ app.get("/admin", isAuthenticated, function(req, res) {
     res.sendFile(path.join(__dirname, "/public/login.html"));
   }
 });
+// Routes for HTML
 app.get("/login", function(req, res) {
   res.sendFile(path.join(__dirname, "/public/login.html"));
 });
@@ -53,7 +54,7 @@ app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "/public/index.html"));
 });
 
-
+// Syncs database with server and starts server
 db.sequelize.sync(syncOptions).then(function() {
   app.listen(PORT, function() {
     console.log(

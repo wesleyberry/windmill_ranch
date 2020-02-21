@@ -1,4 +1,5 @@
 axios.get('api/events').then(response => {
+    // Gets events from API
     const results = response.data;
     var newArray = [];
     for(let i = 0; i < results.length; i++) {

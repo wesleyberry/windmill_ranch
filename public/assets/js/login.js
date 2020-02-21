@@ -1,4 +1,5 @@
 $('#submitCredentials').on('click', function() {
+    // Login
     event.preventDefault();
     var name = $('#exampleInputEmail1').val();
     var password = $('#exampleInputPassword1').val();
@@ -16,6 +17,7 @@ Please Try Again`
         ));
 });
 
+// Logout
 $('#logout').on('click', function() {
     event.preventDefault();
     axios.get('/logout/')
@@ -23,6 +25,7 @@ $('#logout').on('click', function() {
     .catch(err => console.log(err));
 });
 
+// Checks to see if user exists in DB
 function checkDB() {
     axios.post('/api/users/checkDB', {})
     .then(() => console.log(200))

@@ -2,6 +2,7 @@ $(document).ready(function() {
  
     var imageHeight, wrapperHeight, overlap, container = $('.ranchImagesContainer');  
  
+    // Centers image
     function centerImage() {
         imageHeight = container.find('img').height();
         wrapperHeight = container.height();
@@ -11,6 +12,7 @@ $(document).ready(function() {
      
     $(window).on("load resize", centerImage);
      
+    // Creates Ranch Image Container
     var el = document.getElementById('ranchImagesContainerJS');
     if (el.addEventListener) {  
         el.addEventListener("webkitTransitionEnd", centerImage, false); // Webkit event

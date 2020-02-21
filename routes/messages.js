@@ -4,6 +4,8 @@ const router = require('express').Router();
 const nodemailer = require('nodemailer');
 const emailUser = process.env.EMAIL_USERNAME;
 const emailPassword = process.env.EMAIL_PASSWORD;
+
+// Emails client with message
 router.post('/messages', (req, res) => {
     const name = req.body.name;
     const email = req.body.email;

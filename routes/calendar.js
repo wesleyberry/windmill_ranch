@@ -3,6 +3,7 @@ const router = require('express').Router();
 const db = require('../models');
 const isAuthenticated = require("../config/middleware/isAuthenticated");
 
+// Finds all events in Event table
 router.route('/events').get((req, res) => {
     db.Event.findAll({})
     .then(response => {
@@ -11,6 +12,7 @@ router.route('/events').get((req, res) => {
     .catch(err => res.json(err));
 });
 
+// Deletes an event
 router.delete("/events:id", isAuthenticated, (req, res) => {
     if(req.user.name === 'root') {
         db.Event.destroy({
@@ -22,6 +24,7 @@ router.delete("/events:id", isAuthenticated, (req, res) => {
     }
 });
 
+// Creates new event
 router.post('/events', isAuthenticated, (req, res) => {
     const event = req.body;
     console.log(event);

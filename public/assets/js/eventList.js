@@ -1,4 +1,5 @@
 axios.get('api/events').then(response => {
+    // Dynamically creates events to display on DOM
     const results = response.data;
     for(var i = 0; i < results.length; i++) {
         var month = results[i].month;
@@ -52,6 +53,7 @@ axios.get('api/events').then(response => {
     }
 }).catch(err => console.log(err));
 
+// Submits a new event to API
 $('#submitEvent').on('click', function(e) {
     e.preventDefault();
     var eventName= $('#eventTitle').val();

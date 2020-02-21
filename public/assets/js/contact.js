@@ -1,5 +1,7 @@
 $('#submitMessage').click(e => {
     e.preventDefault();
+
+    // Front end for messages
     const name = $('#name').val();
     const email = $('#emailAddress').val();
     const subject = $('#subject').val();
