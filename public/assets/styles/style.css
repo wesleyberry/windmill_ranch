@@ -752,6 +752,9 @@ a:focus {
         height: 140px;
         width: auto;
     }
+    .titleOfferings {
+        padding-top: 155px;
+    }
     .carousel {
         margin-top: 0px;
     }
